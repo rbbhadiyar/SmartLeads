@@ -6,10 +6,15 @@ import { errorHandler } from './middleware/errorHandler';
 
 const app = express();
 
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost',
+  process.env.CLIENT_URL,
+].filter(Boolean) as string[];
+
 app.use(cors({
   origin: (origin, callback) => {
-    // Allow requests with no origin (curl, Postman) and any localhost port
-    if (!origin || origin.includes('localhost') || origin.includes('127.0.0.1')) {
+    if (!origin || allowedOrigins.some(o => origin.startsWith(o))) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
