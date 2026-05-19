@@ -10,6 +10,10 @@
 
 **A production-grade, full-stack Lead Management Dashboard built with the MERN stack and TypeScript.**
 
+🌐 **Live Demo:** [smartleadsproject.vercel.app](https://smartleadsproject.vercel.app)  
+🔗 **API:** [smartleads-17e5.onrender.com/api](https://smartleads-17e5.onrender.com/api)  
+📦 **Repo:** [github.com/rbbhadiyar/SmartLeads](https://github.com/rbbhadiyar/SmartLeads)
+
 [Features](#-features) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started) · [API Docs](#-api-documentation) · [Project Structure](#-project-structure)
 
 </div>
